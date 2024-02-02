@@ -9,7 +9,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   projenrcTs: true,
   repositoryUrl: 'git@github.com:juadavard/cdk-tagging-best-practices.git',
   eslint: true,
-  devDeps: ['aws-cdk', 'ts-node '],
+  devDeps: ['aws-cdk', 'ts-node'],
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
