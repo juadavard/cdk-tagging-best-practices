@@ -11,7 +11,7 @@ export class CustomStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props: CustomStackProps) {
     super(scope, id);
 
-    this.securityTags = props.securityTags ?? 1;
+    this.securityTags = props.securityTags ?? 2;
 
   }
 }
