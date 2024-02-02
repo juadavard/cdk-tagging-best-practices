@@ -9,42 +9,32 @@
 ```typescript
 import { CustomStack } from 'cdk-tagging-best-practices'
 
-new CustomStack(scope?: Construct, id?: string, props?: StackProps)
+new CustomStack(scope: Construct, id: string, props: CustomStackProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#cdk-tagging-best-practices.CustomStack.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | Parent of this stack, usually an `App` or a `Stage`, but could be any construct. |
-| <code><a href="#cdk-tagging-best-practices.CustomStack.Initializer.parameter.id">id</a></code> | <code>string</code> | The construct ID of this stack. |
-| <code><a href="#cdk-tagging-best-practices.CustomStack.Initializer.parameter.props">props</a></code> | <code>aws-cdk-lib.StackProps</code> | Stack properties. |
+| <code><a href="#cdk-tagging-best-practices.CustomStack.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#cdk-tagging-best-practices.CustomStack.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#cdk-tagging-best-practices.CustomStack.Initializer.parameter.props">props</a></code> | <code><a href="#cdk-tagging-best-practices.CustomStackProps">CustomStackProps</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Optional</sup> <a name="scope" id="cdk-tagging-best-practices.CustomStack.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="cdk-tagging-best-practices.CustomStack.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
-Parent of this stack, usually an `App` or a `Stage`, but could be any construct.
-
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="cdk-tagging-best-practices.CustomStack.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="cdk-tagging-best-practices.CustomStack.Initializer.parameter.id"></a>
 
 - *Type:* string
 
-The construct ID of this stack.
-
-If `stackName` is not explicitly
-defined, this id (and any parent IDs) will be used to determine the
-physical ID of the stack.
-
 ---
 
-##### `props`<sup>Optional</sup> <a name="props" id="cdk-tagging-best-practices.CustomStack.Initializer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="props" id="cdk-tagging-best-practices.CustomStack.Initializer.parameter.props"></a>
 
-- *Type:* aws-cdk-lib.StackProps
-
-Stack properties.
+- *Type:* <a href="#cdk-tagging-best-practices.CustomStackProps">CustomStackProps</a>
 
 ---
 
@@ -436,6 +426,7 @@ The construct to start the search from.
 | <code><a href="#cdk-tagging-best-practices.CustomStack.property.templateOptions">templateOptions</a></code> | <code>aws-cdk-lib.ITemplateOptions</code> | Options for CloudFormation template (like version, transform, description). |
 | <code><a href="#cdk-tagging-best-practices.CustomStack.property.terminationProtection">terminationProtection</a></code> | <code>boolean</code> | Whether termination protection is enabled for this stack. |
 | <code><a href="#cdk-tagging-best-practices.CustomStack.property.urlSuffix">urlSuffix</a></code> | <code>string</code> | The Amazon domain suffix for the region in which this stack is defined. |
+| <code><a href="#cdk-tagging-best-practices.CustomStack.property.securityTags">securityTags</a></code> | <code>number</code> | *No description.* |
 
 ---
 
@@ -757,7 +748,46 @@ The Amazon domain suffix for the region in which this stack is defined.
 
 ---
 
+##### `securityTags`<sup>Required</sup> <a name="securityTags" id="cdk-tagging-best-practices.CustomStack.property.securityTags"></a>
 
+```typescript
+public readonly securityTags: number;
+```
+
+- *Type:* number
+
+---
+
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### CustomStackProps <a name="CustomStackProps" id="cdk-tagging-best-practices.CustomStackProps"></a>
+
+#### Initializer <a name="Initializer" id="cdk-tagging-best-practices.CustomStackProps.Initializer"></a>
+
+```typescript
+import { CustomStackProps } from 'cdk-tagging-best-practices'
+
+const customStackProps: CustomStackProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#cdk-tagging-best-practices.CustomStackProps.property.securityTags">securityTags</a></code> | <code>number</code> | *No description.* |
+
+---
+
+##### `securityTags`<sup>Optional</sup> <a name="securityTags" id="cdk-tagging-best-practices.CustomStackProps.property.securityTags"></a>
+
+```typescript
+public readonly securityTags: number;
+```
+
+- *Type:* number
+
+---
 
 
 
